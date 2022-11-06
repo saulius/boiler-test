@@ -7,4 +7,5 @@ variables:
   buffer_size:
     type: int
     required: false
+    default: 1024
     description: Buffer size
