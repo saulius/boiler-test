@@ -12,3 +12,6 @@ variables:
     required: false
     default: alb.{{ hostname }}
     description: Load balancer hostname 
+
+macros:
+  - .boiler/macros/update_inventory.py {{ load_balancer_hostname }}
