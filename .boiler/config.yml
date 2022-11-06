@@ -7,3 +7,8 @@ variables:
     required: false
     default: 1024
     description: Buffer size
+
+  load_balancer_hostname:
+    required: false
+    default: alb.{{ hostname }}
+    description: Load balancer hostname 
