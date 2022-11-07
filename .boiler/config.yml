@@ -14,4 +14,4 @@ variables:
     description: Load balancer hostname 
 
 macros:
-  - ['python', '.boiler/macros/update_inventory.py', '{{ load_balancer_hostname }}']
+- ['python', '.boiler/macros/update_inventory.py', '{{ load_balancer_hostname }}']
