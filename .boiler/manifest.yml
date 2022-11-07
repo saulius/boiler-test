@@ -13,5 +13,10 @@ variables:
     default: alb.{{ hostname }}
     description: Load balancer hostname 
 
+  yaml_block:
+    required: false
+    description: YAML block variable
+    multiline: true
+
 macros:
 - ['python', '.boiler/macros/update_inventory.py', '{{ load_balancer_hostname }}']
